@@ -1,0 +1,202 @@
+
+<html>
+    <head>
+        <title>Forme</title>
+    </head>
+    <body>
+        <!-- Login Forma -->
+        <form action="" method="post">
+            <fieldset>
+                <legend><strong>Login Forma</strong></legend>
+                <label for="username">User Name</label>
+                <input type="text" name="username" required>
+                <label for="password">Password</label>
+                <input type="password" name="password" required>
+                <a href="../bit-web/Reset Page.html">forgot password</a>
+                <input type="submit" value="submit">
+            </fieldset>
+        </form>
+
+        <!-- Studentski kviz -->
+
+        <form action="">
+            <fieldset>
+                <legend><strong>Student Quiz</strong></legend>
+                <p>Glavni grad Srbije</p>
+                <input type="radio" name="grad" value="Beograd" >Beograd
+                <input type="radio" name="grad" value="Novi Sad" >Novi Sad
+                <input type="radio" name="grad" value="Zrenjanin" >Zrenjanin
+
+                <p>Glavni jezik koji se koristi za Client stranu je:</p>
+                <input type="checkbox" name="Java" id="">Java
+                <input type="checkbox" name="JavaScript" id="">JavaScript
+                <input type="checkbox" name="C#" id="">C#
+                <br>
+                <hr>
+                <label for="info">Dodatne informacije</label>
+                <textarea name="info" id="" cols="30" rows="10"></textarea>
+
+            </fieldset>
+        </form>
+
+        <!-- Datum rodjenja i ljubimac -->
+        <form action="">
+            <fieldset>
+                <legend><strong>Datum rodjenja i ljubimac</strong></legend>
+            <p>Odaberi dan, mesec i godinu rodjenja:</p>
+            <select name="day" id="">
+                <option value="Ponedeljak">Ponedeljak</option>
+                <option value="Utorak">Utorak</option>
+                <option value="Sreda">Sreda</option>
+                <option value="Cetvrtak">Cetvrtak</option>
+                <option value="Petak">Petak</option>
+                <option value="Subota">Subota</option>
+                <option value="Nedelja">Nedelja</option>
+            </select>
+            <select name="month" id="">
+                <option value="Januar">Januar</option>
+                <option value="Februar">Februar</option>
+                <option value="Mart">Mart</option>
+                <option value="April">April</option>
+                <option value="Maj">Maj</option>
+                <option value="Jun">Jun</option>
+                <option value="Jul">Jul</option>
+                <option value="Avgust">Avgust</option>
+                <option value="Septembar">Septembar</option>
+                <option value="Oktobar">Oktobar</option>
+                <option value="Novembar">Novembar</option>
+                <option value="Decembar">Decembar</option>
+            </select>
+            <select name="year" id="">
+                <option value="1970">1970</option>
+                <option value="1971">1971</option>
+                <option value="1972">1972</option>
+                <option value="1973">1973</option>
+                <option value="1974">1974</option>
+                <option value="1975">1975</option>
+                <option value="1976">1976</option>
+                <option value="too young">Too young :)</option>
+            </select>
+            <select name="pet" id="" size="4" multiple="multiple">
+                <option value="cat">Cat</option>
+                <option value="dog">Dog</option>
+                <option value="donke">Donke</option>
+                <option value="horse">Horse</option>
+            </select>
+        </fieldset>
+        </form>
+
+        <!-- Then VS Now -->
+        <form action="">
+            <fieldset>
+                <legend><strong>Reset/Button/Hidden</strong></legend>
+            
+            <label for="name">Name of product</label>
+            <input type="text" name="name" id="">
+            <br><hr>
+            <label for="description">Description</label>
+            <textarea name="description" id="" cols="30" rows="10"></textarea>
+            <br>
+            <hr>
+            <label for="device">Devices</label>
+            <br>
+            <input type="radio" name="device" id="">TV
+            <input type="radio" name="device" id="">RADIO
+            <input type="radio" name="device" id="">PC
+            <br>
+            <input type="reset" value="reset">
+            <br>
+            <br>
+            <button>
+                <img src="../bit-web/images/GitHub.jpeg" alt="add" width="40" height="40"> Add
+            </button>
+        </fieldset>
+        </form>
+
+        <!-- Then VS Now -->
+
+        <form action="../bit-web/handle-upload.html" method="get" target="_blank">
+            <fieldset>
+                <legend><strong>Then VS Now</strong></legend>
+                <label for="before">Before</label>
+                <br>
+                <input type="file" name="before" id="">
+                <br>
+                <textarea name="before_description" id="" cols="30" rows="10"></textarea>
+                <hr>
+                <br>
+                <label for="after">After</label>
+                <br>
+                <input type="file" name="after" id="">
+                <br>
+                <textarea name="after_description" id="" cols="30" rows="10"></textarea>
+                <br>
+                <input type="submit" value="Send">
+            </fieldset>
+        </form>
+
+        <form action="">
+            <h1>Labels/Grouping</h1>
+            <fieldset>
+                <legend><strong>Personal data</strong></legend>
+                <label for="name">Name</label>
+                <input type="text" name="name">
+                <br>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="">
+                <br>
+                <label for="phone">Phone</label>
+                <input type="text" name="phone" id="">
+            </fieldset>
+            <fieldset>
+                <legend><strong>Location</strong></legend>
+                <label for="City">City</label>
+                <input type="text" name="City">
+                <br>
+                <label for="Street">Street</label>
+                <input type="text" name="Street" id="">
+                <br>
+                <label for="Street number">Street number</label>
+                <input type="number" name="Street number" id="">
+            </fieldset>
+            <fieldset>
+                <legend><strong>Event info</strong></legend>
+                <label for="event">Event</label>
+                <select name="event" id="">
+                    <option value="birthday">birthday</option>
+                    <option value="wedding" selected="selected">wedding</option>
+                    <option value="company">company</option>
+                </select>
+                <label for="guests">Number of guests</label>
+                <input type="number" name="guests" id="" placeholder="10">
+
+            </fieldset>
+
+        </form>
+
+        <!-- Facebook Login Forma -->
+        <form action="../bit-web/Facebook.html" method="get">
+            <fieldset>
+                <legend><strong>Facebook Login Forma</strong></legend>
+                <label for="username" >User Name</label>
+                <input type="text" name="username" required placeholder="user name">
+                <label for="password">Password</label>
+                <input type="password" name="password" required placeholder="password">
+                <a href="../bit-web/Reset Page.html">forgot password</a>
+                <hr>
+                <br>
+                <label for="user">User</label>
+                <input type="text" name="user" placeholder="User name">
+                <br>
+                <label for="user_post"></label>
+                <textarea name="user_post" id=""  cols="30" rows="10" placeholder="Blog post"></textarea>
+                <br>
+                <label for="date">Insert date</label>
+                <input type="date" name="date" id="">
+                <br><br>
+                <input type="submit" value="SUBMITE">
+            </fieldset>
+        </form>
+
+    </body>
+</html>
