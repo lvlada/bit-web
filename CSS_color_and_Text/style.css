@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'SpaceMono';
+    src: url(../CSS_color_and_Text/fonts/Space_Mono/SpaceMono-Regular.ttf);
+    font-family: 'Montez';
+    src: url(./fonts/Montez/Montez-Regular.ttf);
+}
+body{
+    font-weight: 400;
+}
+p{
+    color: darkturquoise;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 3px #000000;
+
+}
+#drugi{
+    color: rgb(0, 206, 209);
+    background-color: #8a2be2;
+    opacity: 0.5;
+    font-family: 'SpaceMono';
+    font-style: oblique;
+    text-align: left;
+    line-height: 200%;
+}
+#treci{
+    color: #8a2be2;
+    background-color: rgba(210, 105, 30, 0.5);
+    font-family: 'Montez';
+    text-transform: uppercase;
+    text-decoration: line-through;
+    text-align: right;
+
+}
+#cetvrti img{
+    float: left;
+    padding: 10px;
+    width: 100px;
+    height:auto;
+
+
+    
+}
+#cetvrti{
+    padding: 50px 10px;
+    padding-bottom: 200px;
+    background-color: green;
+    text-transform: lowercase;
+    text-decoration: underline;
+}
+
+#first{
+    background-color: #00ffff;
+    opacity: 0.6;
+}
+#second{
+    background-color: rgba(0, 255, 255, 0.6);
+}
+
+table{
+    width: 600px;
+}
+td:first-child{
+    background-color:#00ffff;
+}
+td:nth-child(2){
+    background-color:HotPink;
+}
+td:nth-child(3){
+    background-color:greenyellow;
+}
+a{
+    color: red;
+}
+a:visited{
+    color: black;
+}
+a:hover{
+    color: green;
+}
+a:focus{
+    color: blue;
+}
