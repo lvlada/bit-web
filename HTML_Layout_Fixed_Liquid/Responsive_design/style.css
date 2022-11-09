@@ -1,0 +1,46 @@
+body{
+    width: 960px;
+    font-family: 'Roboto', sans-serif;
+    margin: 50px auto;
+    
+}
+
+header{
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+
+nav{
+    margin: auto;
+    margin-left: 60%;
+
+
+}
+
+nav a{
+    text-decoration: none;
+    padding:10px;
+    color:lightskyblue;
+    text-align: right;
+
+}
+
+#Home{
+    background-color: lightskyblue;
+    color: white;
+}
+
+.corosant img{
+    display: block;
+    background-size: 960px;
+}
+
+.articals{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.articals img{
+    width: 200px;
+}
