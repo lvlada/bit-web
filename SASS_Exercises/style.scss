@@ -1,0 +1,25 @@
+$font-size:16px;
+$counter: 0;
+
+h1{
+    color: red;
+}
+
+a{
+    text-decoration: none;
+    background-color: green;
+    &:active{
+        background-color: yellow!important;
+    }
+    &:visited{
+        background-color: orange;
+    }
+}
+
+@for $i from 1 through 4{
+    .loop-#{$i} {
+        font-size: $font-size + $counter;
+    }
+    $counter : $i + 1;
+    
+}
