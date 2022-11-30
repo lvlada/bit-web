@@ -289,13 +289,13 @@ font-size: 14px;
 
 
 .contact_form{
-    width: 850px;
     margin: 0 auto;
 
 }
 .iner_form{
     margin: 0 auto;
     width:80%;
+    text-align: center;
 }
 
 input, textarea{
@@ -315,8 +315,8 @@ button{
     border: none;
     padding: 5px 10px;
     margin-bottom: 50px;
+    margin-left: -79%
 }
-
 
 
 /* FOOTER */

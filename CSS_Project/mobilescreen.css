@@ -46,9 +46,10 @@ h1{
 }
 
 .under{
-    width: 41%;
+    width: 47%;
     margin: 0 auto;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 
@@ -307,7 +308,7 @@ input, textarea{
     display: block;
     margin: 0 auto;
     margin-bottom: 10px;
-    width: 330px;
+    width: 80%;
     line-height: 2;
 
 }
