@@ -1,0 +1,23 @@
+@import 'variables';
+
+
+
+.masthead{
+    background-color: $Greenish;
+    padding-top:50px;
+    padding-bottom:20px;
+    margin-bottom: 30px;
+    h1, p{
+        color:white;
+        padding-top:15px;
+    }
+    i{
+        color:white;
+        position: relative;
+        top: 3px;
+    }
+    img{
+        height: 200px;
+    }
+    
+}
