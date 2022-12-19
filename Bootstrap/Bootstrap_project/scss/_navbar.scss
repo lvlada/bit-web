@@ -1,13 +1,74 @@
 
+@import 'variables';
+
 .navbar {
     font-weight: 900;
     background-color: $Blueish;
     a{
         color: white;
-        font-weight: 400;
+        font-weight: 700;
+        &:hover{
+            color: $Greenish;
+        }
+    }
+    .logo{
+        a:hover{
+            color:white;}
     }
     .navbar-brand{
         font-weight: 900;
     }
+    // .right_menu{
+    //     margin-left: 7%;
+    // }
+    .navbar-collapse{
+        flex-grow: 0;
+        margin-right:12%;
+    }
+    .navbar-toggler{
+        color: white!important;
+        border:2px solid white;
 
+    }
+    
+    .navbar-toggler-icon{
+        background-image: url(../img/portfolio/hamburger-white.svg);
+    }
+
+    @media (max-width: 576px) {
+        .navbar-toggler{
+            color: white!important;
+            border:2px solid $Greenish!important;
+            background-color:$Greenish!important ;
+            padding: 5px!important;
+            font-size:1rem;
+            font-weight: bol;
+        }
+        .logo{
+            margin-left:0%;
+        }
+    
+    }
+
+    @media (min-width: 576px) { 
+        .logo{
+            margin-left:7%;
+        }
+     }
+
+     @media (min-width: 576px) { 
+        .navbar-toggler{
+            margin-right:10%!important;
+        }
+        .logo{
+            margin-left:7%;
+        }
+     }
+
+     @media (min-width: 992px) { 
+        .logo{
+            margin-left:10%;
+        }
+
+      }
 }

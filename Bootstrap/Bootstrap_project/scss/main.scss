@@ -6,3 +6,44 @@
 @import 'portfolio';
 @import 'variables';
 
+h2{
+    padding-top:15px;
+    font-size:40px;
+    font-weight: 700!important;
+}
+
+.about{
+    background-color: $Greenish;
+    padding-top:50px;
+    padding-bottom:20px;
+    margin-bottom: 30px;
+    h2{
+        color:white;
+    }
+    p{
+        color:white;
+        padding-top:15px;
+    }
+    img{
+        height: 200px;
+    }
+    .line{
+        @include line;
+    }
+    i{
+        @include white_star;
+    } 
+}
+
+
+footer{
+    background-color: $Blueish;
+    color: white;
+}
+
+.mobTitle{
+    h1{
+      font-weight: 700!important;
+      font-size: 140px!important;
+    }
+  }

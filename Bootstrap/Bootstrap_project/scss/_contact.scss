@@ -1,0 +1,11 @@
+@import 'mixins';
+@import 'variables';
+
+.btn-main{
+    background-color: $Greenish!important;
+    color: white!important;
+}
+form{
+    color:$ContactTextColor;
+    margin-bottom:50px;
+}

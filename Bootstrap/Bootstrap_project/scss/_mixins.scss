@@ -1,13 +1,25 @@
 
 
-.line{
+@mixin line{
     display: inline-block;
     width:70px;
-    border-bottom: 2px solid white;
+    border-bottom: 3px solid white;
 }
 
-.line2{
+@mixin line2{
     display: inline-block;
     width:70px;
-    border-bottom: 2px solid black;
+    border-bottom: 3px solid black;
+}
+
+@mixin white_star{
+        color:white;
+        position: relative;
+        top: 3px;
+}
+
+@mixin black_star{
+        color:black;
+        position: relative;
+        top: 3px;
 }

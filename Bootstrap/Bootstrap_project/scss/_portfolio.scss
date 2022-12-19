@@ -1,0 +1,22 @@
+@import 'mixins';
+
+
+@media (min-width: 992px) {
+    .portfolio{
+        margin-left: 10%!important;
+        margin-right: 10%!important;
+    }
+
+ }
+
+ @media (max-width: 576px) {
+    .portfolio{
+        margin-left: 1%!important;
+        margin-right: 1%!important;
+
+    }
+  }
+
+  .line{
+    @include line2;
+  }
