@@ -15,8 +15,7 @@ h2{
 .about{
     background-color: $Greenish;
     padding-top:50px;
-    padding-bottom:20px;
-    margin-bottom: 30px;
+    padding-bottom:80px;
     h2{
         color:white;
     }
@@ -33,12 +32,61 @@ h2{
     i{
         @include white_star;
     } 
+    button{
+        margin-top:30px;
+        img{
+            height:16px;
+        }
+        &:hover{
+            color:white;
+            background-color: $Blueish;
+        }
+    }
 }
 
+@media (max-width: 992px) { 
+    .about{
+        p{
+            padding-left: 10%;
+            padding-right:10%
+        }  
+    }
+  }
 
 footer{
+    padding-top:10px;
     background-color: $Blueish;
     color: white;
+    margin: 0;
+    h6{
+        font-weight: 900;
+        padding-bottom: 10px;
+    }
+
+    #facebook{
+        &:hover{
+            // background-image:url(../img/portfolio/icons8-facebook-32_white2.png) ;
+            filter: invert(0.3);
+        }
+    }
+    #google{
+        &:hover{
+            // background-image:url(../img/portfolio/icons8-google-plus-30.png) ;
+            filter: invert(0.3);
+        }
+    }
+
+    #twitter{
+        &:hover{
+            filter: invert(0.3);
+        }
+    }
+
+    #linkedin{
+        &:hover{
+            filter: invert(0.3);
+        }
+    }
 }
 
 .mobTitle{
@@ -47,3 +95,4 @@ footer{
       font-size: 140px!important;
     }
   }
+

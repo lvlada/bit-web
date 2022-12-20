@@ -50,18 +50,15 @@
     
     }
 
-    @media (min-width: 576px) { 
-        .logo{
-            margin-left:7%;
-        }
-     }
-
      @media (min-width: 576px) { 
         .navbar-toggler{
             margin-right:10%!important;
         }
         .logo{
             margin-left:7%;
+        }
+        .navbar-nav{
+            margin-left:8%;
         }
      }
 
