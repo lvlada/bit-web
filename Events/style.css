@@ -1,0 +1,51 @@
+body{
+    text-align: center;
+    background-color: antiquewhite;
+
+}
+h1{
+    color:brown;
+}
+
+#button1{
+    background-color: red;
+    color: white;
+    border:none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dark_grey{
+    background-color: rgb(70, 67, 80);
+}
+
+#button2{
+    margin-top: 20px;
+    background-color: yellow;
+    color: black;
+    border:none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.noToggle{
+    pointer-events: none;
+}
+
+
+#first{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    margin: 0 37%;
+}
+
+
+#button3{
+    background-color: red;
+    color: white;
+    border:none;
+    padding: 10px;
+    border-radius: 5px;
+
+}
