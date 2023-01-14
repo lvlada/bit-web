@@ -13,10 +13,11 @@ function turnOfBackground(){
 
 function addMessage(){
     var element = document.getElementById('input1');
-    alert(element.value);
     var newEle = document.createElement('p');
     var eleNod = document.createTextNode(element.value);
     newEle.appendChild(eleNod);
     var messageBlock = document.getElementById('first');
     messageBlock.appendChild(newEle);
+    var input_filed = document.getElementById('input1');
+    input_filed.value = '';
 }
