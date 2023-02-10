@@ -16,8 +16,19 @@ function getGitHub(){
         info.html('');
         
         response.items.forEach(function(index){
-            var img = $('<img/>').attr('src', index.avatar_url);
-            info.append(img);      
+            //var img = $('<img/>').attr('src', index.avatar_url);
+            var newItem = $( `<div class="col-3" style="margin-top:2.5rem">
+                        <div class="card" style="width:18rem">
+                            <img src="${index.avatar_url}" class="card-img-top" alt="...">
+                            <div class='card-body'>
+                                <h5 class='card-title' style="font-size:20px">${index.login}</h5>
+                                <p class="card-text">${index.type}</p>
+                                <a href='${index.html_url}' target='_blank' class='btn btn-info' style="color:white;font-weight:bold;font-size:16px">Go to profile</a>
+                            </div>
+                        </div>
+                    </div>`);
+            //info.append(img); 
+            info.append(newItem);      
         })
 
 
@@ -38,18 +49,6 @@ $(document).ready(function(){
     getGitHub();
 });
 
-
-// `<div class="col-4" style="margin-top:2.5rem">
-//             <div class="card" style="width:18rem">
-//                 <img src="${item.avatar_url}" class="card-img-top" alt="...">
-//                 <div class='card-body'>
-//                     <h5 class='card-title' style="font-size:1.5rem">${item.login}</h5>
-//                     <p class="card-text">${item.type}</p>
-//                     <a href='${item.html_url}' target='_blank' class='btn btn-info' style="color:white;font-weight:bold;font-size:1rem">Go to profile</a>
-//                     <button type="button" id=${userIndex[i]} onclick="userRepo('${reposit}')" class="btn btn-info userrepos" style="color:white;font-weight:bold;font-size:1rem">Repositories</button>
-//                 </div>
-//             </div>
-//         </div>`
 
 
 
