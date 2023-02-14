@@ -112,7 +112,7 @@ $(document).ready(function(){
 function goInfoPage(event){
     var id = event;
     sessionStorage.setItem('numberID', id);
-    window.location = './ShowInfoPage.html';
+    //window.location = './ShowInfoPage.html';
 }
 
 
