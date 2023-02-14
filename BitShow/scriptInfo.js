@@ -29,7 +29,7 @@ function infoPage(){
         <div id="InfoDate">
            <h1><span id="title">Title:</span> ${response.name}</h1>
             <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12" style="margin-top:2.5rem">
+            <div class="col-lg-6 col-md-4 col-sm-12" style="margin-top:2.5rem">
                 <img src="${newImage}" class="card-img-top" alt="no Image" id="noImage">
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12" style="margin-top:2.5rem">

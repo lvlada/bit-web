@@ -66,7 +66,7 @@ function inputSearch(){
         response.forEach(function(index){
             console.log(`Index ${index}`);
             var newItem = index.show.name;
-            autoComp2.push(newItem); 
+            autoComp2.push({id: index.show.id, name: newItem}); 
         })
         autoComp2.length = 10;
 
@@ -97,15 +97,26 @@ $(document).ready(function(){
 
       $('#input1').keyup(function(){
         searchText2 = this.value;
-        console.log(`Tekst u polju ${searchText2}`);
         inputSearch();
       });
 
       $( "#input1" ).autocomplete({
-        source: autoComp2
+        source: function(req, resp) {
+            resp($.map(autoComp2, function(value, key) {
+                return  {
+                    label: value.name,
+                    value: value.id
+                }
+            }))
+        },
+        select: function(event, ui) {
+            $('#input1').html('');
+            sessionStorage.setItem('numberID', ui.item.value);
+            location.assign('./ShowInfoPage.html')
+        }
       });
 
-
+     
 });
 
 
