@@ -1,38 +1,87 @@
 const link = 'https://api.tvmaze.com/search/shows?q=';
 const linkID = 'https://api.tvmaze.com/shows/';
+const linkID2 = 'https://api.tvmaze.com/shows';
 var searchText = '';
 var searchText2 = '';
 var newID = '';
 var autoComp2 = [];
+var show = [];
 
 
 
+// function tvShow(){
+//     var req = $.ajax({
+//         url:`${link}${searchText}`,
+//         //url:`${linkID2}`,
+//         method:'GET'
+//     })
+
+//     req.done(function(response){
+//         console.log(response);
+//         //console.log(response[0].show.image);
+//         var info = $('.info')
+//         info.html('');
+        
+//         response.forEach(function(index){
+//             var newImage = '';
+//             if(index.show.image === null){
+//                 newImage = './istockphoto-1147544807-612x612.jpg';
+//             } else{
+
+//                 newImage = index.show.image.medium;
+//             }
+//             var newItem = $( `<div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center" style="margin-top:2.5rem">
+//             <div class="card" style="width:20rem">
+//                 <img src="${newImage}" class="card-img-top" alt="no Image" id="noImage">
+//                 <div class='card-body'>
+//                     <h5 class='card-title' style="font-size:20px">${index.show.name}</h5>
+//                     <a href = "./ShowInfoPage.html" class='btn btn-info' style="color:white;font-weight:bold;font-size:16px" onclick="goInfoPage(${index.show.id})">Link</a>
+//                 </div>
+//             </div>
+//         </div>`); 
+//         info.append(newItem); 
+     
+//         })
+
+
+//     }).fail(function(response){
+//         console.log(response)
+
+//     }).always(function(response){
+//         console.log('zahtev zavsen');
+//     })
+// }
+
+
+//50 shows
 function tvShow(){
     var req = $.ajax({
-        url:`${link}${searchText}`,
+        //url:`${link}${searchText}`,
+        url:`${linkID2}`,
         method:'GET'
     })
 
     req.done(function(response){
         console.log(response);
-        console.log(response[0].show.image);
+        response.length = 50;
+        //console.log(response[0].show.image);
         var info = $('.info')
         info.html('');
         
         response.forEach(function(index){
             var newImage = '';
-            if(index.show.image === null){
+            if(index.image === null){
                 newImage = './istockphoto-1147544807-612x612.jpg';
             } else{
 
-                newImage = index.show.image.medium;
+                newImage = index.image.original;
             }
             var newItem = $( `<div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center" style="margin-top:2.5rem">
             <div class="card" style="width:20rem">
                 <img src="${newImage}" class="card-img-top" alt="no Image" id="noImage">
                 <div class='card-body'>
-                    <h5 class='card-title' style="font-size:20px">${index.show.name}</h5>
-                    <a href = "./ShowInfoPage.html" class='btn btn-info' style="color:white;font-weight:bold;font-size:16px" onclick="goInfoPage(${index.show.id})">Link</a>
+                    <h5 class='card-title' style="font-size:20px">${index.name}</h5>
+                    <a href = "./ShowInfoPage.html" class='btn btn-info' style="color:white;font-weight:bold;font-size:16px" onclick="goInfoPage(${index.id})">Link</a>
                 </div>
             </div>
         </div>`); 
@@ -48,7 +97,6 @@ function tvShow(){
         console.log('zahtev zavsen');
     })
 }
-
 
 
 

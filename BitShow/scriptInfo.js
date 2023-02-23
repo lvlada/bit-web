@@ -22,7 +22,7 @@ function infoPage(){
                 newImage = './istockphoto-1147544807-612x612.jpg';
             } else{
 
-                newImage = response.image.medium;
+                newImage = response.image.original;
             }
 
         var newItemDecrition = $( `
