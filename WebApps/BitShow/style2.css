@@ -1,0 +1,131 @@
+
+body{
+    background-image:linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.2)), url('./movie-background-collage.jpg');
+    background-size: cover;
+    margin-top:50px!important;     
+}
+
+#newBody{
+    background-image:linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.2)), url('./movie-background-collage.jpg');
+    background-size:auto;
+    margin-top:50px!important;     
+}
+
+#input1{
+  margin-top:2opx;
+}
+#gif{
+  width: 50px;
+  height: 50px;
+}
+
+.navbar-brand:hover{
+  color:aquamarine;
+}
+.nav-bg{
+    margin-top:20px;
+    background-color:rgba(0,0,0, 0.3) ;
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+
+.navbar-brand{
+    color: white;
+    font-size: 26px;
+}
+
+#noImage{
+    width: 100%;
+    height: 400px;
+}
+
+.nav-bg2{
+    margin-top:20px;
+    background-color:rgba(0,0,0, 0.7) ;
+    padding: 10px;
+    border-radius: 12px;
+    
+}
+
+.navbar-brand2{
+    color: white;
+    font-size: 12px;
+}
+
+/* Search */
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+  }
+  
+  /*when hovering an item:*/
+  .autocomplete-items div:hover {
+    background-color: #e9e9e9; 
+  }
+  
+  /*when navigating through the items using the arrow keys:*/
+  .autocomplete-active {
+    background-color: DodgerBlue !important; 
+    color: #ffffff; 
+  }
+
+
+
+  /* Info Page */
+
+  #InfoDate h1{
+    color:white;
+    font-family:monospace;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 400;
+  }
+
+  #InfoDate h3{
+    font-family:monospace;
+    color:orange;
+    padding-top: 20px;
+  }
+
+  #InfoDate img{
+    width: 100%;
+    height: 100%;
+  }
+
+  #InfoDate p{
+    color:white;
+  }
+  #InfoDate li{
+    color:white;
+  }
+
+  #title{
+    color: orange;
+    font-weight: 700;
+  }
+
+  #back{
+    text-decoration: none;
+    color: white;
+    margin-bottom: -25px;
+  }
+  .back{
+    margin-top:20px;
+  }
+  
