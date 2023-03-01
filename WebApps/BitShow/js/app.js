@@ -1,3 +1,5 @@
+import { goInfoPage } from './goInfoPage.js';
+
 const link = 'https://api.tvmaze.com/search/shows?q=';
 const linkID = 'https://api.tvmaze.com/shows/';
 const linkID2 = 'https://api.tvmaze.com/shows';
@@ -107,11 +109,11 @@ $(document).ready(function(){
 });
 
 
-function goInfoPage(event){
-    var id = event;
-    sessionStorage.setItem('numberID', id);
-    //window.location = './ShowInfoPage.html';
-}
+// function goInfoPage(event){
+//     var id = event;
+//     sessionStorage.setItem('numberID', id);
+//     //window.location = './ShowInfoPage.html';
+// }
 
 
 
