@@ -1,4 +1,4 @@
 export function goInfoPage(event){
-    var id = event;
+    let id = event;
     sessionStorage.setItem('numberID', id);
 }
