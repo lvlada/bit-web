@@ -1,6 +1,6 @@
 
 body{
-    background-image:linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.2)), url('./movie-background-collage.jpg');
+    background-image:linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.2)), url('../images/movie-background-collage.jpg');
     background-size: cover;
     margin-top:50px!important;     
 }
@@ -12,7 +12,7 @@ h3{
 }
 
 #newBody{
-    background-image:linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.2)), url('./movie-background-collage.jpg');
+    background-image:linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.2)), url('../images/movie-background-collage.jpg');
     background-size:auto;
     margin-top:50px!important;     
 }
