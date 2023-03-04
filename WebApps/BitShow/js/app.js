@@ -45,7 +45,7 @@ function tvShow(){
 }
 
 
-// Man part 
+// Main part 
 
 $(document).ready(function(){
     $('#input1').change(function(){
