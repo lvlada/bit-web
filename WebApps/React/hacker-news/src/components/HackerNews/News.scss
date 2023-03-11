@@ -1,0 +1,40 @@
+table{
+    width: 1000px;
+}
+
+th, td, tr{
+    border-bottom: 1px solid #e1e3dc;
+    width: 100%;
+    padding:5px;
+    padding-bottom:20px;
+    padding-top:20px;
+    background-color: #f6f7ee;
+    color:#e95422;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+#title{
+    font-weight: bold;
+}
+#index{
+    text-align: right;
+    color: black;
+    padding-left: 10px;
+    width: 30px;
+}
+
+#comments{
+    background-color: #31a2b7;
+    border-radius: 15px;
+    color: white;
+    padding: 7px;
+}
+
+#score{
+    color: gray;
+}
+#awesome{
+    color: gray;
+}
