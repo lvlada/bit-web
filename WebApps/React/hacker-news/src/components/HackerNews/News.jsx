@@ -32,8 +32,16 @@ const News = (props) => {
      
       //URL ???????? CRASH!!!
 
-    // let d = user.url.split('/');
-    // console.log(d[2]);
+      //SOME TEST
+      let newLink = '';
+      const sampleString = user.url;
+        if (typeof(sampleString) === 'string') {
+            newLink = sampleString.split('/');
+        } else {
+            console.log('neeeeeee');
+        }
+
+    console.log(newLink[2]);
 
 
     return(
@@ -41,7 +49,7 @@ const News = (props) => {
             <tr>
                 <td id="index">{id+1}.</td>
                 <td>
-                    <p id="title"><a rel="stylesheet" href="{user.url}">{user.title}</a></p>
+                    <p id="title"><a rel="stylesheet" href="{user.url}">{user.title} ({newLink[2]})</a></p>
                     <p><span id="score"><FontAwesomeIcon icon={faHeart}></FontAwesomeIcon>&nbsp;{user.score} points&nbsp;&nbsp;&nbsp;</span>
 
                     <span><FontAwesomeIcon icon={faUser} id="awesome"></FontAwesomeIcon>&nbsp;{user.by}&nbsp;&nbsp;&nbsp;</span>
