@@ -38,7 +38,7 @@ const News = (props) => {
         if (typeof(sampleString) === 'string') {
             newLink = sampleString.split('/');
         } else {
-            console.log('neeeeeee');
+            console.log('FALSE');
         }
 
     console.log(newLink[2]);
