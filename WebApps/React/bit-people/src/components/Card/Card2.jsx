@@ -2,9 +2,9 @@ import React from "react";
 import "./Card.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useEffect, useState } from "react";
-import IdCard from "../IdCard/IdCard";
+import IdCard2 from "../IdCard/IdCard2";
 
-export default function Card() {
+export default function Card2() {
   const url = "https://randomuser.me/api/?results=15";
   const [user, setUser] = useState([]);
   const [male, setMale] = useState(0);
@@ -72,24 +72,20 @@ export default function Card() {
             </p>
             {firstLast.length > 0 && (
               <>
-                <ul>
-                  {firstLast.map((item, index) => {
-                    return (
-                      <IdCard key={index} content={item} gen={item.gender} />
-                    );
-                  })}
-                </ul>
+                {firstLast.map((item, index) => {
+                  return (
+                    <IdCard2 key={index} content={item} gen={item.gender} />
+                  );
+                })}
               </>
             )}
             {user.length > 0 && firstLast.length == 0 && (
               <>
-                <ul>
-                  {user.map((item, index) => {
-                    return (
-                      <IdCard key={index} content={item} gen={item.gender} />
-                    );
-                  })}
-                </ul>
+                {user.map((item, index) => {
+                  return (
+                    <IdCard2 key={index} content={item} gen={item.gender} />
+                  );
+                })}
               </>
             )}
           </div>
